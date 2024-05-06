@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./index.js"></script> -->
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    
+
+</head>
+<body>
+    <h1>
+       Js
+    </h1>
+
+    <title>Repaso de conceptos</title>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab ducimus minima aliquam. Aliquid optio nisi quas aut deserunt dignissimos exercitationem dolore, sit accusamus necessitatibus quam repellat officia dolorum voluptas.</p>
+        <form action="">
+            <input type="text" id="numero1">
+            <input type="text" id="numero2">
+            <input type="button" value="sumar" onclick="alert( suma() )">
+            <p id="parrafo"></p>
+        </form> 
+    </div>      
+    <script>
+       const Pp = document.getElementById("parrafo")
+       Pp.style = "color:red";
+
+        var suma = function (numero1, numero2){
+            var Numero1 = parseFloat(document.getElementById("numero1").value);
+            var Numero2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = Numero1 + Numero2;
+            
+            //Pp.style = "color:red";
+            Pp.style = "font-size:23px";
+            Pp.style = "align-items: center";
+          
+            Pp.innerHTML = resultado;
+            return resultado ;
+            
+        }
+              
+    </script>
+</body>
+</html>
+
